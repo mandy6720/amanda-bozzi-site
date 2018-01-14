@@ -17,7 +17,7 @@
     */
     $('#slides').superslides({
         animation: 'fade',
-        play: 3000
+        play: 5000
     });
     /*==================================================
             magnific Popup js
@@ -60,7 +60,7 @@
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
-                scrollTop: $(hash).offset().top + 80
+                scrollTop: ($(hash).offset().top)
             }, 1200, function () {
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
@@ -99,4 +99,10 @@
         preloader.fadeOut();
         preloaderArea.delay(500).fadeOut('slow');
     });
+    // HB MENU
+    var hb = $("#hb-menu");
+    hb.on("click", function () {
+        $(this).toggleClass("change");
+    })
+    // show links
 })(jQuery);
