@@ -60,7 +60,9 @@
             var hash = this.hash;
             // toggle hamburger
             var hb = $("#hb-menu");
-            hb.toggleClass("change");
+            if (this.hash !== '#hire') {
+                hb.toggleClass("change");
+            }
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
