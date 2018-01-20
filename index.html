@@ -27,6 +27,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!--responsive css-->
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- basic lightbox -->
+  <link rel="stylesheet" href="node_modules/basiclightbox/dist/basicLightbox.min.css">
+
 </head>
 
 <body>
@@ -202,8 +205,8 @@
       <div class="container">
         <div class="row">
           <div class="joy mix web col-md-4 col-sm-6">
-            <div class="single-item wow fadeInUp" data-wow-delay="0.2s">
-              <a href="assets/images/portfolio/ab-coaching.png" class="popup">
+            <div class="single-item wow fadeInUp" data-wow-delay="0.2s" id="abc">
+              <a href="assets/images/portfolio/ab-coaching.png" >
                 <figure class="single-effect">
                   <div class="overlay-portfolio"></div>
                   <img src="assets/images/portfolio/ab-coaching.png" alt="image">
@@ -215,9 +218,9 @@
               </a>
             </div>
           </div>
-          <div class="joy mix mobile col-md-4 col-sm-6" id="releaf">
-            <div class="single-item wow fadeInUp" data-wow-delay="0.4s">
-              <a href="assets/images/portfolio/releaf-feels.png" class="popup">
+          <div class="joy mix mobile col-md-4 col-sm-6">
+            <div class="single-item wow fadeInUp" data-wow-delay="0.4s" id="releaf">
+              <a href="assets/images/portfolio/releaf-feels.png">
                 <figure class="single-effect">
                   <div class="overlay-portfolio"></div>
                   <img src="assets/images/portfolio/releaf-feels.png" alt="image">
@@ -230,8 +233,8 @@
             </div>
           </div>
           <div class="joy mix web col-md-4 col-sm-6">
-            <div class="single-item wow fadeInUp" data-wow-delay="0.6s">
-              <a href="assets/images/portfolio/inprnt-discovery.png" class="popup">
+            <div class="single-item wow fadeInUp" data-wow-delay="0.6s"  id="inprnt">
+              <a href="assets/images/portfolio/inprnt-discovery.png">
                 <figure class="single-effect">
                   <div class="overlay-portfolio"></div>
                   <img src="assets/images/portfolio/inprnt-discovery.png" alt="image">
@@ -244,9 +247,9 @@
             </div>
           </div>
           <div class="joy mix web col-md-4 col-sm-6">
-            <div class="single-item wow fadeInUp" data-wow-delay="0.8s">
+            <div class="single-item wow fadeInUp" data-wow-delay="0.8s" id="ibm">
               <div class="overlay-portfolio"></div>
-              <a href="assets/images/portfolio/level2.png" class="popup">
+              <a href="assets/images/portfolio/level2.png">
                 <figure class="single-effect">
                   <div class="overlay-portfolio"></div>
                   <img src="assets/images/portfolio/level2.png" alt="image">
@@ -425,8 +428,6 @@
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                   </a>
                 </li>
-                <!-- <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li> -->
-                <!-- <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li> -->
                 <li>
                   <a href="http://www.linkedin.com/in/amandabozzi">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -457,6 +458,9 @@
   <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
   <!--superslides js-->
   <script src="assets/js/jquery.superslides.min.js"></script>
+  <!-- Basic Lightbox -->
+  <script src="./node_modules/basiclightbox/dist/basicLightbox.min.js"></script>
+  <script src="assets/js/lightbox.js"></script>
   <!--custom js-->
   <script src="assets/js/custom.js"></script>
 </body>
