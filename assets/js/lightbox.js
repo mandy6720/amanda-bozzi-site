@@ -3,8 +3,16 @@ var abc = $("#abc").click(function(el) {
   abcLb.show();
 });
 var abcLb = basicLightbox.create(`
+  <div class="modal1">
     <img src="assets/images/portfolio/ab-coaching.png" width="800" height="600">
-`);
+      <a>Close</a>
+  </div>
+`, {
+    beforeShow: function (instance) {
+      instance.element().querySelector('a').onclick = instance.close
+    }
+})
+
 
 // Releaf lightbox
 var releaf = $("#releaf").click(function(el) {
@@ -16,18 +24,18 @@ var releafLb = basicLightbox.create(`
 `);
 
 // inprnt lightbox
-var abc = $("#inprnt").click(function(el) {
-  abcLb.show();
+var inprnt = $("#inprnt").click(function(el) {
+  inprntLb.show();
 });
-var abcLb = basicLightbox.create(`
+var inprntLb = basicLightbox.create(`
     <img src="assets/images/portfolio/inprnt-discovery.png" width="800" height="600">
 `);
 
 //  IBM lightbox
-var releaf = $("#ibm").click(function(el) {
+var ibm = $("#ibm").click(function(el) {
   console.log('ibm')
-  releafLb.show();
+  ibmLb.show();
 });
-var releafLb = basicLightbox.create(`
+var ibmLb = basicLightbox.create(`
     <img src="assets/images/portfolio/level2.png" width="800" height="600">
 `);
