@@ -63,7 +63,8 @@ img {
 	height: auto;
 }
 input,
-textarea {
+textarea,
+select {
 	outline: none;
 	border: none;
 	resize: none;
@@ -688,13 +689,19 @@ figure.single-effect img {
 		Start contact area
 =============================================*/
 
-input.controler {
+input.controler,
+select.controler {
 	font-size: 14px;
 	margin-bottom: 12px;
 	padding: 14px 15px;
 	text-transform: capitalize;
 	width: 100%;
 	background: #f8f8f8;
+}
+.dropdown {
+	height: 44px;
+	background: #f8f8f8;
+	padding: 14px 0;
 }
 .single > textarea {
 	border: none;
@@ -705,6 +712,7 @@ input.controler {
 	margin-top: 11px;
 }
 .form-submit {
+	clear: both;
 	text-align: center;
 }
 .form-submit input[type="submit"] {

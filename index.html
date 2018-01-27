@@ -390,13 +390,24 @@
           <div class="contact-form">
             <form action="http://formspree.io/amanda@amandabozzi.com" method="POST">
               <div class="single col-md-6">
-                <input type="text" name="name" class="controler" placeholder="Enter your full name" required="">
+                <input type="text" name="name" class="controler" placeholder="Enter your full name" required="true">
               </div>
               <div class="single col-md-6">
-                <input type="email" name="email" class="controler" placeholder="Enter your email" required="">
+                <input type="email" name="email" class="controler" placeholder="Enter your email" required="true">
+              </div>
+              <div class="single col-md-6">
+                <input type="phone" name="phone" class="controler" placeholder="Enter your phone number" required="true">
+              </div>
+              <div class="single col-md-6">
+                <select name="budget" class="controler dropdown" placeholder="What's your budget?" required="true">
+                  <option value=">500">> $500</option>
+                  <option value="500-1000">$500 - $1000</option>
+                  <option value="1000-5000">$1000 - $5000</option>
+                  <option value="5000+">$5000+</option>
+                </select>
               </div>
               <div class="single col-md-12">
-                <textarea name="textarea" id="message" cols="25" rows="10" placeholder="How I can help you? :)"></textarea>
+                <textarea name="textarea" id="message" cols="25" rows="10" placeholder="Tell me a little about your project :)"></textarea>
               </div>
               <div class="form-submit">
                 <input type="submit" name="comment-sub" value="Send">
