@@ -21,7 +21,8 @@
     11.Footer section
 =========================================================*/
 
-body {
+body,
+.modal1 {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0px;
 	margin: 0px;
@@ -541,6 +542,30 @@ figure.single-effect img {
 	font-weight: 600;
 	margin-top: 5px;
 }
+/*============================================
+	lightboxes
+==============================================*/
+
+.modal1 {
+	position: relative;
+	padding: 1rem;
+	border-radius: 3px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; 
+	color: #666;
+}
+
+.modal1 a {
+	position: absolute;
+	right: 14px;
+	top: 10px;
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
 /*============================================
 	hire me area
 ==============================================*/
