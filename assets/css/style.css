@@ -21,7 +21,8 @@
     11.Footer section
 =========================================================*/
 
-body {
+body,
+.modal1 {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0px;
 	margin: 0px;
@@ -63,7 +64,8 @@ img {
 	height: auto;
 }
 input,
-textarea {
+textarea,
+select {
 	outline: none;
 	border: none;
 	resize: none;
@@ -541,6 +543,30 @@ figure.single-effect img {
 	margin-top: 5px;
 }
 /*============================================
+	lightboxes
+==============================================*/
+
+.modal1 {
+	position: relative;
+	padding: 1rem;
+	border-radius: 3px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; 
+	color: #666;
+}
+
+.modal1 a {
+	position: absolute;
+	right: 14px;
+	top: 10px;
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+/*============================================
 	hire me area
 ==============================================*/
 
@@ -688,23 +714,28 @@ figure.single-effect img {
 		Start contact area
 =============================================*/
 
-input.controler {
+input.controler,
+select.controler {
 	font-size: 14px;
 	margin-bottom: 12px;
 	padding: 14px 15px;
-	text-transform: capitalize;
 	width: 100%;
 	background: #f8f8f8;
+}
+.dropdown {
+	height: 44px;
+	background: #f8f8f8;
+	padding: 14px 0;
 }
 .single > textarea {
 	border: none;
 	width: 100%;
-	text-transform: capitalize;
 	padding: 18px;
 	background: #f8f8f8;
 	margin-top: 11px;
 }
 .form-submit {
+	clear: both;
 	text-align: center;
 }
 .form-submit input[type="submit"] {
