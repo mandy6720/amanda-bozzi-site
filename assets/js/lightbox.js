@@ -8,9 +8,9 @@ var abcLb = basicLightbox.create(`
       <a>Close</a>
   </div>
 `, {
-    beforeShow: function (instance) {
-      instance.element().querySelector('a').onclick = instance.close
-    }
+  beforeShow: function (instance) {
+    instance.element().querySelector('a').onclick = instance.close
+  }
 })
 
 
@@ -20,8 +20,15 @@ var releaf = $("#releaf").click(function(el) {
   releafLb.show();
 });
 var releafLb = basicLightbox.create(`
+  <div class="modal1">
     <img src="assets/images/portfolio/releaf-feels.png" width="800" height="600">
-`);
+    <a>Close</a>
+  </div>
+`, {
+  beforeShow: function (instance) {
+    instance.element().querySelector('a').onclick = instance.close
+  }
+});
 
 // inprnt lightbox
 var inprnt = $("#inprnt").click(function(el) {
