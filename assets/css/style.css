@@ -694,7 +694,6 @@ select.controler {
 	font-size: 14px;
 	margin-bottom: 12px;
 	padding: 14px 15px;
-	text-transform: capitalize;
 	width: 100%;
 	background: #f8f8f8;
 }
@@ -706,7 +705,6 @@ select.controler {
 .single > textarea {
 	border: none;
 	width: 100%;
-	text-transform: capitalize;
 	padding: 18px;
 	background: #f8f8f8;
 	margin-top: 11px;
