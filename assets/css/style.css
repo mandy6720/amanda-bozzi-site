@@ -556,9 +556,10 @@ figure.single-effect img {
 	align-items: center;
 	flex-direction: column; 
 	color: #666;
+	min-width: 300px;
 }
 
-.modal1 a {
+.modal1 .fa-close {
 	position: absolute;
 	right: 14px;
 	top: 10px;
