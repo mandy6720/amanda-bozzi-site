@@ -1,17 +1,32 @@
-// AB Coaching lightbox
-var abc = $("#abc").click(function(el) {
-  abcLb.show();
+// // AB Coaching lightbox
+// var abc = $("#abc").click(function(el) {
+//   abcLb.show();
+// });
+// var abcLb = basicLightbox.create(`
+//   <div class="modal1">
+//     <a href="http://www.amandabozzicoaching.com"><img src="assets/images/portfolio/ab-coaching.png" width="200" height="100">
+//     <a><span class="fa fa-close"></span></a>
+//   </div>
+// `, {
+//   beforeShow: function (instance) {
+//     instance.element().querySelector('.fa-close').onclick = instance.close
+//   }
+// })
+
+//  IBM lightbox
+var ibm = $("#ibm").click(function(el) {
+  ibmLb.show();
 });
-var abcLb = basicLightbox.create(`
+var ibmLb = basicLightbox.create(`
   <div class="modal1">
-    <a href="http://www.amandabozzicoaching.com"><img src="assets/images/portfolio/ab-coaching.png" width="200" height="100">
+    <a href="https://ibmwhlevel2.automata.net/"><img src="assets/images/portfolio/level2.png" width="200" height="100"></a>
     <a><span class="fa fa-close"></span></a>
   </div>
 `, {
   beforeShow: function (instance) {
     instance.element().querySelector('.fa-close').onclick = instance.close
   }
-})
+});
 
 
 // Releaf lightbox
@@ -36,21 +51,6 @@ var inprnt = $("#inprnt").click(function(el) {
 var inprntLb = basicLightbox.create(`
   <div class="modal1">
     <a href="http://www.inprnt.com/discover"><img src="assets/images/portfolio/inprnt-discovery.png" width="200" height="100"></a>
-    <a><span class="fa fa-close"></span></a>
-  </div>
-`, {
-  beforeShow: function (instance) {
-    instance.element().querySelector('.fa-close').onclick = instance.close
-  }
-});
-
-//  IBM lightbox
-var ibm = $("#ibm").click(function(el) {
-  ibmLb.show();
-});
-var ibmLb = basicLightbox.create(`
-  <div class="modal1">
-    <a href="https://ibmwhlevel2.automata.net/"><img src="assets/images/portfolio/level2.png" width="200" height="100"></a>
     <a><span class="fa fa-close"></span></a>
   </div>
 `, {
