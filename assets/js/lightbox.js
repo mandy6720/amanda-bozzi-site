@@ -1,17 +1,17 @@
-// // AB Coaching lightbox
-// var abc = $("#abc").click(function(el) {
-//   abcLb.show();
-// });
-// var abcLb = basicLightbox.create(`
-//   <div class="modal1">
-//     <a href="http://www.amandabozzicoaching.com"><img src="assets/images/portfolio/ab-coaching.png" width="200" height="100">
-//     <a><span class="fa fa-close"></span></a>
-//   </div>
-// `, {
-//   beforeShow: function (instance) {
-//     instance.element().querySelector('.fa-close').onclick = instance.close
-//   }
-// })
+// AB Coaching lightbox
+var abc = $("#ab").click(function(el) {
+  abcLb.show();
+});
+var abcLb = basicLightbox.create(`
+  <div class="modal1">
+    <a href="http://www.amandabozzicoaching.com"><img src="assets/images/portfolio/ab-coaching.png" width="200" height="100">
+    <a><span class="fa fa-close"></span></a>
+  </div>
+`, {
+  beforeShow: function (instance) {
+    instance.element().querySelector('.fa-close').onclick = instance.close
+  }
+})
 
 //  IBM lightbox
 var ibm = $("#ibm").click(function(el) {
